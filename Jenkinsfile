@@ -15,7 +15,7 @@ pipeline {
             steps {
                 echo 'Cloning the application codebase'
                 git branch: 'main', url: 'https://github.com/kenechikwendu/Jenkins-CI-CD-Pipeline-Project.git'
-                echo "${MESSAGE}, ${WORKSPACE}, ${BUILD_NUMBER}"
+                
             }
         }
         stage('Build') {
